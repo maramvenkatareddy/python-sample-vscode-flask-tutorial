@@ -1,0 +1,27 @@
+pipeline {
+ 
+agent any
+ 
+stages{
+  stage('cloneeeeeeee'){
+ 
+    steps{
+ 
+      git branch:'master', url:'https://github.com/maramvenkatareddy/python-sample-vscode-flask-tutorial.git'
+ 
+ 
+}
+ 
+  stage('codebuild'){
+    steps{
+ 
+       sh 'cd python-sample-vscode-flask-tutorial' 
+       sh 'pip install -r requirements.txt'
+ 
+}
+ 
+}
+ 
+}
+ 
+}
