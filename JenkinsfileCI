@@ -12,9 +12,10 @@ stages{
   } 
   stage('codebuild'){
     steps{
- 
-       sh 'cd python-sample-vscode-flask-tutorial' 
-       sh 'pip install -r requirements.txt
+       sh '''
+            cd python-sample-vscode-flask-tutorial
+            pip install -r requirements.txt
+        '''
     }
   }
 }
